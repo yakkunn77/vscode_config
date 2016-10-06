@@ -1,0 +1,40 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+  // editor ----------------------------------------------
+
+  // clipboard
+  { "key": "ctrl+k",         "command": "editor.action.clipboardCutAction",
+                             "when"   : "editorTextFocus && !editorReadonly"},
+  { "key": "ctrl+w",         "command": "editor.action.clipboardCutAction",
+                             "when"   : "editorTextFocus && !editorReadonly"},
+  { "key": "ctrl+y",         "command": "editor.action.clipboardPasteAction",
+                             "when"   : "editorTextFocus && !editorReadonly"},
+  // fold or unfold
+  { "key": "ctrl+[",         "command": "editor.fold",
+                             "when"   : "editorTextFocus" },
+  { "key": "ctrl+]",         "command": "editor.unfold",
+                             "when"   : "editorTextFocus" },
+  { "key": "shift+ctrl+[",   "command": "editor.foldRecursively",
+                             "when"   : "editorTextFocus" },
+  { "key": "shift+ctrl+]",   "command": "editor.unFoldRecursively",
+                             "when"   : "editorTextFocus" },  
+  // workbench -------------------------------------------
+  
+  // file
+  { "key": "ctrl+x ctrl+s",  "command": "workbench.action.files.save"},
+  { "key": "ctrl+x ctrl+a",  "command": "workbench.action.files.saveAs"},   
+  { "key": "ctrl+x ctrl+c",  "command": "workbench.action.closeActiveEditor"},
+  { "key": "ctrl+x ctrl+o",  "command": "workbench.action.files.newFile" },
+  // previouseEditor
+  { "key": "ctrl+x up",      "command": "workbench.action.previousEditor"},
+  { "key": "ctrl+x ctrl+p",  "command": "workbench.action.previousEditor"},
+  { "key": "ctrl+x left",    "command": "workbench.action.previousEditor"},
+
+  // nextEditor
+  { "key": "ctrl+x down",    "command": "workbench.action.nextEditor"},
+  { "key": "ctrl+x ctrl+n",  "command": "workbench.action.nextEditor"}, 
+  { "key": "ctrl+x right",   "command": "workbench.action.nextEditor"}
+
+  // openGlobal
+  // { "key": "cmd+k",          "command": "workbench.action.openGlobalKeybindings" }
+]

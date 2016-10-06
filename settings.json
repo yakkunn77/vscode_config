@@ -1,0 +1,20 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+    "editor.tabSize": 2,
+    "editor.rulers": [80],
+
+    "ruby.lint": {
+        "reek": true,
+        "rubocop": {
+            "except": [
+                "AsciiComments"
+            ],
+            "lint": true,
+            "rails": true
+        },
+        "ruby": true
+        // "fasterer": true,
+        // "debride": true,
+        // "ruby-lint": true
+    }
+}

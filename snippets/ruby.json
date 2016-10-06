@@ -1,0 +1,80 @@
+{
+/*
+	 // Place your snippets for Ruby here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+  "RSpec: describe": {
+		"prefix": "rdesc",
+		"body": [
+			"describe '#$1' do",
+			"  $2",
+			"end"
+		],
+		"description": "Rspec.describe"
+	},
+	"RSpec: it": {
+		"prefix": "rit",
+		"body": [
+			"it '$1' do",
+			"  $2",
+			"end"
+		],
+		"description": "Rspec.it"
+	},
+	"RSpec: context": {
+		"prefix": "rcon",
+		"body": [
+			"context '$1' do",
+			"  $2",
+			"end"
+		],
+		"description": "Rspec.context"
+	},
+	"RSpec: let": {
+		"prefix": "rlet",
+		"body": [
+			"let(:$1) { $2 }"
+		],
+		"description": "Rspec.let"
+	},
+	"RSpec: shared_context": {
+		"prefix": "rshare",
+		"body": [
+			"shared_context '$1' do",
+			"  $2",
+			"end"
+		],
+		"description": "Rspec.shared_context"
+	},
+	"RSpec: expect to eq": {
+		"prefix": "rexpe",
+		"body": [
+			"expect($1).to eq $2"
+		],
+		"description": "expect($1).to eq $2"
+	},
+	"RSpec: expect to be_valid": {
+		"prefix": "rexpv",
+		"body": [
+			"expect($1).to be_valid $2"
+		],
+		"description": "expect($1).to be_valid"
+	},
+	"RSpec: expect to http_status": {
+		"prefix": "rexph",
+		"body": [
+			"expect($1).to http_status $2"
+		],
+		"description": "expect($1).to http_status"
+	}
+}
